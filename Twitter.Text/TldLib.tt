@@ -36,7 +36,7 @@ namespace Twitter.Text
         public static string[] <#= name #> = {
 <#
        b = false;
-     }else{
+     }else if(!string.IsNullOrWhiteSpace(s)){
        var tld = s.Substring(2)
                   .Replace("'", "")
                   .Replace("\"", "");
